@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="ติดต่อ ไก่ทอดซาเล้ง — แบบฟอร์ม ติดต่อ/ที่อยู่/แผนที่" />
+  <title>ติดต่อ — ไก่ทอดซาเล้ง</title>
+    </head>
+    <body style="background-color: rgb(227, 255, 157);">
+        <header class="container">
+            <h1>ติดต่อเรา</h1>
+            <nav>
+                <a href="index.html">หน้าแรก</a>
+                <a href="about.html">เกี่ยวกับเรา</a>
+                <a href="services.html">การบริการ</a>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section aria-labelledby="contact-form">
+                <h2 id="contact-form">แบบฟอร์มติดต่อ</h2>
+                <form id="contactForm" novalidate>
+                    <div>
+                        <label for="name">ชื่อ : </label>
+                        <input type="text" id="name" name="name" required aria-required="true">
+                        <div class="error" id="err-name" aria-live="polite"></div>
+                    </div>
+
+                    <div>
+                        <label for="email">อีเมล : </label>
+                        <input type="email" id="email" name="email" required aria-required="true" />
+                        <div class="error" id="err-email" aria-live="polite"></div>
+                    </div>
+
+                    <div>
+                        <label for="message">ข้อความ</label>
+                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
+                        <div class="error" id="err-message" aria-live="polite"></div>
+                    </div>
+
+                    <button type="submit">ส่งข้อความ</button>
+                </form>
+                <div id="formSuccess" style="color: aquamarine;">
+                    ขอบคุณ! ข้อความของคุณถูกส่งแล้ว
+                </div>
+            </section>
+        </main>
+    </body>
+</html>
