@@ -1,73 +1,68 @@
 <!DOCTYPE html>
 <html lang="th">
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="description" content="ติดต่อ ไก่ทอดซาเล้ง — แบบฟอร์ม ติดต่อ/ที่อยู่/แผนที่" />
-  <title>ติดต่อ — ไก่ทอดซาเล้ง</title>
-    </head>
-    <body style="background-color: rgb(227, 255, 157);">
-        <header class="container">
-            <div style="background-color: rgb(227, 176, 75);">
-                <img src="logo.png" alt="โลโก้ ไก่ทอดซาเล้ง" style="height: 60px;width: 60px;object-fit:cover" />
-                <h1>ติดต่อเรา</h1>
-            </div>
-                <a href="index.html">หน้าแรก</a> <br>
-                <a href="about.html">เกี่ยวกับเรา</a> <br>
-                <a href="services.html">การบริการ</a>
-            </nav>
-        </header>
 
-        <main class="container">
-            <section aria-labelledby="contact-form">
-                <h2 id="contact-form">แบบฟอร์มติดต่อ</h2>
-                <form id="contactForm" novalidate>
-                    <div>
-                        <label for="name">ชื่อ : </label>
-                        <input type="text" id="name" name="name" required aria-required="true">
-                        
-                    </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="ติดต่อ ไก่ทอดซาเล้ง" />
+    <title>ติดต่อ — ไก่ทอดซาเล้ง</title>
 
-                    <div>
-                        <label for="email">อีเมล : </label>
-                        <input type="email" id="email" name="email" required aria-required="true" />
-                        
-                    </div>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 
-                    <div>
-                        <label for="message">ข้อความ</label><br>
-                        <textarea id="message" name="message" rows="6" required aria-required="true"></textarea>
-                        
-                    </div>
+<body>
 
-                    <button type="submit">ส่งข้อความ</button>
-                </form>
-                
-            </section>
+    <header id="header">
+        <div class="container header-top">
+            <img src="images/logo.png" alt="โลโก้" class="logo">
+            <h1>ติดต่อเรา</h1>
+        </div>
 
-            <section aria-labelledby="address">
-                <h2 id="address">ที่อยู่ของบริษัท</h2>
-                <address>
-                    ไก้ทอดซาเล้ง <br>
-                    123/4 ถนนอร่อย ต.กรอบนอก อ.นุ่มใน จ.รสดี 10110<br />
-                     โทร: 0-1234-5678
-                </address>
-            </section>
+        <nav class="nav">
+            <ul class="nav-menu">
+                <li><a href="index.html">หน้าแรก</a></li>
+                <li><a href="about.html">เกี่ยวกับ</a></li>
+                <li><a href="services.html">บริการ</a></li>
+            </ul>
+        </nav>
+    </header>
 
-            <section aria-labelledby="map">
-                <h2 id="map">แผนที่</h2>
-                <div style="width: 100%;height: 400%;">
-                    <iframe
-                     title="แผนที่ ไก่ทอดซาเล้ง"
-                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3875.0!2d100.0!3d13.0"
-                     width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </section>
-  </main>
+    <main class="container">
 
-        <footer class="container">
-            <p>&copf; ไก่ทอดซาเล้ง</p>
-        </footer>
-    </body>
+        <section class="section">
+            <h2>แบบฟอร์มติดต่อ</h2>
+
+            <form class="card">
+                <label>ชื่อ</label>
+                <input type="text" required>
+
+                <label>อีเมล</label>
+                <input type="email" required>
+
+                <label>ข้อความ</label>
+                <textarea rows="5" required></textarea>
+
+                <button class="btn" type="submit">ส่งข้อความ</button>
+            </form>
+        </section>
+
+        <section class="section">
+            <h2>ที่อยู่</h2>
+            <address>
+                ไก่ทอดซาเล้ง<br>
+                123/4 ถนนอร่อย ต.กรอบนอก อ.นุ่มใน จ.รสดี<br>
+                โทร: 0-1234-5678
+            </address>
+        </section>
+
+    </main>
+
+    <footer id="footer">
+        <div class="container">
+            <p>&copy; 2025 ไก่ทอดซาเล้ง</p>
+        </div>
+    </footer>
+
+</body>
+
 </html>
