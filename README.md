@@ -1,5 +1,7 @@
 # my-business-web
 
+<img src="Screenshot 2025-12-19 190119.png" alt="หน้าเว็บไก่ทอดซาเล้ง" >
+
 **ชื่อโปรเจค:** ไก่ทอดซาเล้ง — เว็บไซต์แสดงข้อมูลธุรกิจไก่ทอด  
 **คำอธิบาย:** เว็บตัวอย่างสำหรับการบ้าน/assignment ประกอบด้วย 4 หน้า: หน้าแรก (index.html), เกี่ยวกับ (about.html), บริการ (services.html) และ ติดต่อ (contact.html) โดยใช้ semantic HTML, meta tags, และฟอร์มที่มี client-side validation
 
